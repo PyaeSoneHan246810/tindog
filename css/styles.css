@@ -1,0 +1,303 @@
+/* variables */
+:root {
+    /* font family */
+    --FF_MAIN: 'Montserrat', sans-serif;
+    --FF_LOGO: 'Ubuntu', sans-serif;
+    
+    /* colors */
+    --C_PURE_WHITE: #fff;
+    --C_PURE_BLACK: #000;
+    --C_OFF_WHITE: #f5f5f5;
+    --C_OFF_BLACK: #151515;
+
+    --C_MAIN_BG: #fff;
+    --C_MAIN: #151515;
+    --C_TITLE_BG: #ff4c68;
+    --C_TITLE: #fff;
+    --C_FEATURES_P: #8f8f8f;
+    --C_FEATURES_ICON: #ef8172;
+    --C_FEATURES_ICON_HOVER: #ff4c68;
+
+    /* transition */
+    --TRANS: all .3s ease-in-out;
+}
+
+/* scrollbar styles*/
+body::-webkit-scrollbar {
+    width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--C_PURE_WHITE);
+    border-radius: 100vw;
+    margin-block: 0.5rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--C_TITLE_BG);
+    border-radius: 100vw;
+    border: 0.15rem solid var(--C_PURE_WHITE);
+}
+
+/**css resets**/
+input, button, textarea {
+    font: inherit;
+}
+
+/* css general styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--FF_MAIN);
+    background-color: var(--C_MAIN_BG);
+    color: var(--C_MAIN);
+}
+
+/* --header */
+#title {
+    background-color: var(--C_TITLE_BG);
+    color: var(--C_TITLE);
+}
+
+#title .title_container {
+    width: 80%;
+    margin: auto;
+    padding: 3% 0 9%;
+}
+
+/* ----navbar */
+#title .navbar {
+    margin-bottom: 3rem;
+}
+
+#title .navbar-brand {
+    font-family: var(--FF_LOGO);
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+#title .nav-link {
+    color: var(--C_OFF_WHITE);
+    font-size: 1.2rem;
+    transition: var(--TRANS);
+}
+
+#title .nav-link:hover {
+    color: var(--C_TITLE);
+}
+
+/* ----hero */
+#title h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+#title .download_btn {
+    margin: 5% 3% 5% 0;
+    transition: var(--TRANS);
+}
+
+#title .title_hero_text {
+    margin-top: 1.5rem;
+}
+
+#title .title_hero_img {
+    width: 30%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 22%;
+}
+
+/* --main */
+
+/* ----features */
+#features {
+    padding: 7% 15%;
+    background-color: var(--C_MAIN_BG);
+    position: relative;
+}
+
+#features .features_content {
+    padding: 2rem;
+}
+
+#features i {
+    color: var(--C_FEATURES_ICON);
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    transition: var(--TRANS);
+}
+
+#features i:hover {
+    color: var(--C_FEATURES_ICON_HOVER);
+}
+
+#features h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#features p {
+    color: var(--C_FEATURES_P);
+}
+
+/* ----testimonials */
+#testimonials {
+    text-align: center;
+    background-color: var(--C_FEATURES_ICON);
+    color: var(--C_TITLE);
+}
+
+#testimonials .testimonial-text {
+    font-weight: bold;
+    font-size: 2.75rem;
+    line-height: 1.5;
+}
+
+#testimonials .testimonials_img {
+    width: 20%;
+    height: auto;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#testimonials .carousel-item {
+    padding: 7% 15%;
+}
+
+/* ----press */
+#press {
+    text-align: center;
+    background-color: var(--C_FEATURES_ICON);
+    padding-bottom: 3%;
+}
+
+#press .press_logo {
+    width: 15%;
+    height: auto;
+    margin: 20px 20px;
+}
+
+/* ----pricing */
+#pricing {
+    padding: 100px;
+}
+
+#pricing .pricing_title h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#pricing .pricing_title p {
+    color: var(--C_FEATURES_P);
+}
+
+#pricing .pricing_col {
+    padding: 3% 2%;
+}
+
+#pricing .pricing_col h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#pricing .pricing_col h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+#pricing .card-text-spec {
+    margin-bottom: 3.4rem;
+}
+
+#pricing .sign_up_btn {
+    transition: var(--TRANS);
+    width: 100%;
+    height: auto;
+}
+
+#pricing .card {
+    transition: transform 0.75s ease;
+}
+
+#pricing .card:hover {
+    transform: translateY(-7.5px);
+}
+
+/* ----call to action */
+#cta {
+    background-color: var(--C_FEATURES_ICON_HOVER);
+    padding: 7% 15%;
+    text-align: center;
+}
+
+#cta h3 {
+    color: var(--C_TITLE);
+    font-weight: bolder;
+    font-size: 3rem;
+    line-break: 1.5;
+}
+
+#cta .download_btn {
+    margin: 4% 2% 4% 0;
+    transition: var(--TRANS);
+}
+
+/* --footer */
+footer {
+    padding: 5% 15%;
+    text-align: center;
+}
+
+footer .social_icon {
+    font-size: 1.5rem;
+    margin: 20px 10px;
+    transition: var(--TRANS);
+}
+
+footer a {
+    color: var(--C_MAIN);
+
+}
+
+footer a:hover {
+    color: var(--C_FEATURES_ICON_HOVER);
+}
+
+footer a:hover .social_icon {
+    transform: translateY(-5px);
+}
+
+/* media quarries*/
+
+@media only screen and (max-width: 992px) {
+    #title {
+        text-align: center;
+    }
+
+    #title .navbar-brand {
+        font-size: 1.8rem;
+    }
+
+    #title .nav-link {
+        font-size: 1.1rem;
+    }
+
+    #title h1 {
+        font-size: 2.8rem;
+    }
+
+    #title .title_hero_img {
+        width: 60%;
+        transform: rotate(0);
+        position: static;
+    }
+}
+
+
+
+  
